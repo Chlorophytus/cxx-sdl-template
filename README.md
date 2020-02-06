@@ -1,2 +1,2 @@
 # cxx-sdl-template
-C++17 SDL Template
+C++17 SDL Template with CMake
