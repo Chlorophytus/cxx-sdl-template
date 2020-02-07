@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
 # You can change the name of the project
-project(sdl_template VERSION 0.1.0.1)
+project(sdl_template VERSION 0.1.0.2)
 
 # You can change the C++ standard too
 set(CMAKE_CXX_STANDARD 17)
@@ -16,7 +16,7 @@ find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS})
 
 # If you add classes you should add them here
-add_executable(${PROJECT_NAME} src/${PROJECT_NAME}.cpp)
+add_executable(${PROJECT_NAME} src/${PROJECT_NAME}_interwork.cpp src/${PROJECT_NAME}.cpp)
 
 # Link to SDL2
 target_link_libraries(${PROJECT_NAME} ${SDL2_LIBRARIES})
